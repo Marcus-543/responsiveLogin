@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Rubik+Dirt&display=swap');
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+body *{
+	box-sizing: border-box;
+}
+
+.telaLogin{
+	background: #006465;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.boxLogin{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 50vw;
+	height: 100vh;
+}
+
+.cardForm{
+	box-shadow: 0px 10px 40px #484848;
+	border-radius: 18px;
+	background: #0f928c;
+	padding: 25px;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+}
+
+.cardForm > h1{
+	color: #beee3b;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.cardForm > form{
+	padding: 20px, 20px, 20px, 0;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.email{
+	margin-bottom: 10px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.email > label {
+	margin-bottom: 5px;
+	font-size: 22px;
+	color: #beee3b;
+	font-weight: 800;
+}
+
+.email > input {
+	box-shadow: 0px 10px 40px #00000056;
+	font-size: 18px;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	background: #00c9d2;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+}
+
+.email > input::placeholder {
+	color: white;
+	font-size: 18px;
+}
+
+.email > input:focus {
+	border: white solid 1px;
+}
+
+.senha{
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.senha > label {
+	margin-bottom: 5px;
+	font-weight: 800;
+	color: #beee3b;
+	font-size: 22px;
+}
+
+.senha > input {
+	box-shadow: 0px 10px 40px #00000056;
+	font-size: 18px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	background: #00c9d2;
+	width: 100%;
+	outline: none;
+	border: none;
+}
+
+.senha > input::placeholder {
+	font-size: 18px;
+	color: white;
+}
+
+.senha > input:focus {
+	border: white solid 1px;
+}
+
+.cardForm > form > button{
+	cursor: pointer;
+	font-size: 22px;
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	background: #beee3b;
+	margin-top: 20px;
+	width: 100%;
+	outline: none;
+	border: none;
+	font-weight: 800;
+	box-shadow: 0px 10px 40px -12px #beee3b;
+}
+
+.cardForm > form > button:hover{
+	color: #beee3b;
+	background: white;
+	border: #beee3b 1px solid ;
+}
+
+.footer{
+	width: 100%;
+	margin-top: 22px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.footer	> a{
+	width: 100%;
+	font-size: 12pt;
+	color: white;
+}
+
+.checkBox{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.checkBox > p{
+	margin: 0;
+	color: white;
+}
+
+.checkBox > input{
+	cursor: pointer;
+}
+
+.boxBaner{
+	padding: 30px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	width: 50vw;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.boxBaner > img{
+	width: 35vw;
+}
+
+.slogan > h1{
+	font-family: 'Rubik Dirt';
+	font-size: 2.5vw;
+	text-align: center;
+	color: #beee3b;
+}
+
+.slogan > h2{
+	font-family: 'Rubik Dirt';
+	text-align: center;
+	font-size: 1,5vw;
+	color: #beee3b;
+}
+
+@media only screen and (max-width: 950px){
+	.cardForm{
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.telaLogin{
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+	.boxLogin{
+		width: 100%;
+		height: auto;
+	}
+	.cardForm{
+		width: 90%;
+	}
+	.boxBaner{
+		width: 100%;
+		height: auto;
+	}
+	.boxBaner > img{
+		width: 50vw;
+	}
+	.slogan{
+		display: none;
+	}
+}
